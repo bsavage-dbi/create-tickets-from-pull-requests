@@ -6,6 +6,9 @@ function save_options() {
   var project  = document.getElementById('project').value;
   var url      = document.getElementById('url').value;
   
+  // a trailing slash in the url will mess up the extension -- remove it if it exists
+  url = stripTrailingSlash(url);
+  
   var credentials = username + ":" + password;
   credentials = btoa(credentials);
   
@@ -59,6 +62,13 @@ function save_options() {
       }
       //setTimeout(function(){ clearMsg(); }, 5000);
   });
+}
+
+function stripTrailingSlash(str) {
+    if(str.substr(-1) === '/') {
+        return str.substr(0, str.length - 1);
+    }
+    return str;
 }
 
 function isMessageDisplayed() {
