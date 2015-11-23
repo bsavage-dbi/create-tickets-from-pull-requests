@@ -223,9 +223,6 @@ function createTicket(jiraInfo) {
 			},
 			"assignee": {
 				"name": user
-			},
-			"reporter": {
-				"name": "GitHub Integration"
 			}
 		}
 	});
