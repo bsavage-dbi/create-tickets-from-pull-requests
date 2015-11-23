@@ -3,7 +3,7 @@
 
   "name": "JIRA Tickets in Pull Requests",
   "description": "Makes sure each pull request has a JIRA ticket.",
-  "version": "1.2",
+  "version": "1.3",
   "permissions": [
     "storage", "tabs", "https://github.com/Thrillist/*/compare*", "https://*.atlassian.net/*"
   ],
