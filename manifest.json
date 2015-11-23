@@ -5,7 +5,7 @@
   "description": "Makes sure each pull request has a JIRA ticket.",
   "version": "1",
   "permissions": [
-    "storage", "tabs", "https://github.com/Thrillist/*/compare*", "https://thrillistmediagroup.atlassian.net/*"
+    "storage", "tabs", "https://github.com/Thrillist/*/compare*"
   ],
   "content_scripts": [
     {
